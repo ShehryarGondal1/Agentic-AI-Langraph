@@ -11,7 +11,7 @@ class LoadStreamlitUI:
         self.config =  Config() # config
         self.user_controls = {}
 
-    def initialize_session(self):
+    def initialize_session(self):  ## Define a initilization function to set up the session state and to store the initial values of session state variables
         return {
         "current_step": "requirements",
         "requirements": "",
