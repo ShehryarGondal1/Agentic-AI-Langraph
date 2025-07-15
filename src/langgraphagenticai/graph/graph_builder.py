@@ -56,7 +56,7 @@ class GraphBuilder:
         # Define conditional and direct edges
         self.graph_builder.add_edge(START,"chatbot")
         self.graph_builder.add_conditional_edges("chatbot", tools_condition)
-        self.graph_builder.add_edge("tools","chatbot")
+        self.graph_builder.add_edge("tools","chatbot")  ## In this we are calling the chatbot again to check the response from the tool
 
     def ai_news_build_graph(self):
         # Initialize the AINewsNode
